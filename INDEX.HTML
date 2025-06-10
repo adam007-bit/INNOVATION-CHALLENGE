@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f4f4f4;
+            padding: 15px;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li ul {
+            margin-left: 15px;
+        }
+        .topnav {
+            width: 100%;
+            background: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+        }
+        .form-group button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>INNOVATION CHALLENGE</h2>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li>Training Services
+                <ul>
+                    <li><a href="#">Arduino based car</a></li>
+                    <li><a href="#">Arduino Quadcopter</a></li>
+                    <li><a href="#">Small & big Arduino sensor projects</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="topnav">
+            <a href="#">Control</a>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="form-group">
+            <button>Log In</button>
+        </div>
+    </div>
+</body>
+</html>

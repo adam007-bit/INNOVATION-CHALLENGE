@@ -14,15 +14,20 @@
             background-color: #f5f5f5;
         }
         .header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background: white;
             padding: 20px;
             width: 80%;
             border-radius: 15px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .header h1 {
-            margin-bottom: 5px;
+        .training-services {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
         .info-container {
             display: flex;
@@ -30,16 +35,16 @@
             width: 80%;
             margin-top: 20px;
         }
-        .info-section, .about-section {
-            width: 48%;
+        .about-section {
+            width: 100%;
             background: white;
             padding: 15px;
             border-radius: 15px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
+            text-align: center;
         }
-        .info-section:hover, .about-section:hover {
-            transform: scale(1.05);
+        .header h1, .training-services h3 {
+            margin-bottom: 5px;
         }
         a {
             text-decoration: none;
@@ -50,12 +55,16 @@
 <body>
     <div class="header">
         <h1>INNOVATION CHALLENGE</h1>
-        <h3>WhatsApp</h3>
+        <a href="whatsapp-link.html">
+            <button class="training-services">
+                <h3>WhatsApp</h3>
+            </button>
+        </a>
     </div>
-    
+
     <div class="info-container">
         <a href="training.html">
-            <div class="info-section">
+            <div class="training-services">
                 <h3>Training Services</h3>
                 <ul>
                     <li>ARDUINO CONTROLLED CAR</li>
@@ -65,14 +74,14 @@
                 </ul>
             </div>
         </a>
-        
-        <a href="about.html">
-            <div class="about-section">
-                <h3>About Us</h3>
-                <p>We are passionate about technology and education, offering hands-on learning experiences through Arduino projects and software engineering training.</p>
-                <p>Our mission is to bridge the gap between innovation and learning, empowering individuals to build creative and practical solutions.</p>
-            </div>
-        </a>
     </div>
+
+    <a href="about.html">
+        <div class="about-section">
+            <h3>About Us</h3>
+            <p>We are passionate about technology and education, offering hands-on learning experiences through Arduino projects and software engineering training.</p>
+            <p>Our mission is to bridge the gap between innovation and learning, empowering individuals to build creative and practical solutions.</p>
+        </div>
+    </a>
 </body>
 </html>

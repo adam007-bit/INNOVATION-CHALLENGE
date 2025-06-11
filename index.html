@@ -45,12 +45,20 @@
             padding: 15px;
             border-radius: 15px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .info-section:hover, .about-section:hover {
+            transform: scale(1.05);
         }
         .info-section ul, .about-section p {
             margin: 10px 0;
         }
         .contact-us {
             margin-top: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
@@ -64,26 +72,30 @@
     </div>
     
     <div class="info-container">
-        <div class="info-section">
-            <h2>INNOVATION CHALLENGE</h2>
-            <h3>Training Services</h3>
-            <ul>
-                <li>ARDUINO CONTROLLED CAR</li>
-                <li>ARDUINO WORKSHOP</li>
-                <li>ARDUINO SCHOOL PROJECT</li>
-                <li>Software Engineering</li>
-            </ul>
-            <div class="contact-us">
-                <h3>Contact Us</h3>
-                <p>WhatsApp</p>
+        <a href="training.html">
+            <div class="info-section">
+                <h2>INNOVATION CHALLENGE</h2>
+                <h3>Training Services</h3>
+                <ul>
+                    <li>ARDUINO CONTROLLED CAR</li>
+                    <li>ARDUINO WORKSHOP</li>
+                    <li>ARDUINO SCHOOL PROJECT</li>
+                    <li>Software Engineering</li>
+                </ul>
+                <div class="contact-us">
+                    <h3>Contact Us</h3>
+                    <p>WhatsApp</p>
+                </div>
             </div>
-        </div>
+        </a>
         
-        <div class="about-section">
-            <h3>About Us</h3>
-            <p>We are passionate about technology and education, offering hands-on learning experiences through Arduino projects and software engineering training.</p>
-            <p>Our mission is to bridge the gap between innovation and learning, empowering individuals to build creative and practical solutions.</p>
-        </div>
+        <a href="about.html">
+            <div class="about-section">
+                <h3>About Us</h3>
+                <p>We are passionate about technology and education, offering hands-on learning experiences through Arduino projects and software engineering training.</p>
+                <p>Our mission is to bridge the gap between innovation and learning, empowering individuals to build creative and practical solutions.</p>
+            </div>
+        </a>
     </div>
 </body>
 </html>

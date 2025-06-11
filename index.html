@@ -7,83 +7,82 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 20px;
             display: flex;
+            justify-content: space-between;
+            background-color: #f5f5f5;
         }
-        .sidebar {
-            width: 250px;
-            background: #f4f4f4;
+        .form-section, .info-container {
+            width: 45%;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-section input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-section button {
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .info-section, .about-section {
+            width: 48%;
+            background: white;
             padding: 15px;
-            height: 100vh;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .sidebar h2 {
-            margin-top: 0;
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-        .sidebar ul li {
+        .info-section ul, .about-section p {
             margin: 10px 0;
         }
-        .sidebar ul li ul {
-            margin-left: 15px;
-        }
-        .topnav {
-            width: 100%;
-            background: #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        .content {
-            flex-grow: 1;
-            padding: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-        }
-        .form-group button {
-            background: #007BFF;
-            color: white;
-            padding: 10px 15px;
-            border: none;
+        .contact-us {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>INNOVATION CHALLENGE</h2>
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li>Training Services
-                <ul>
-                    <li><a href="#">Arduino based car</a></li>
-                    <li><a href="#">Arduino Quadcopter</a></li>
-                    <li><a href="#">Small & big Arduino sensor projects</a></li>
-                </ul>
-            </li>
-        </ul>
+    <div class="form-section">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Log in</button>
     </div>
-    <div class="content">
-        <div class="topnav">
-            <a href="#">Control</a>
+    
+    <div class="info-container">
+        <div class="info-section">
+            <h2>INNOVATION CHALLENGE</h2>
+            <h3>Training Services</h3>
+            <ul>
+                <li>ARDUINO CONTROLLED CAR</li>
+                <li>ARDUINO WORKSHOP</li>
+                <li>ARDUINO SCHOOL PROJECT</li>
+                <li>Software Engineering</li>
+            </ul>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>WhatsApp</p>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-        </div>
-        <div class="form-group">
-            <button>Log In</button>
+        
+        <div class="about-section">
+            <h3>About Us</h3>
+            <p>We are passionate about technology and education, offering hands-on learning experiences through Arduino projects and software engineering training.</p>
+            <p>Our mission is to bridge the gap between innovation and learning, empowering individuals to build creative and practical solutions.</p>
         </div>
     </div>
 </body>
